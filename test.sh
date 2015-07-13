@@ -8,3 +8,4 @@ for dir in *; do
     echo $dir
 done
 cat *csv > all.csv
+find . ! -name test.sh ! -name all.csv -maxdepth 1 -type f -delete
